@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: rgb(67, 165, 239);
+}
+
+.osmon {
+    background-color: rgb(67, 165, 239);
+    width: 1600px;
+    height: 100vh;
+}
+.bulut{
+    width: 700px;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+    animation-name: bulut;
+    animation-timing-function:linear;
+}
+@keyframes bulut{
+    from{
+        left: -800px;
+
+    }
+    to{
+        left: 1500px;
+
+    }
+}
+.bulut1{
+    top: 0px;
+    animation-duration: 25s;
+}
+.bulut2{
+    top: 200px;
+    left: 80px;
+    animation-duration: 20s;
+}
+.bulut3{
+    top: 160px;
+    animation-duration: 30s;
+}
+.bulut4{
+    top: 80px;
+    animation-duration: 22s;
+    z-index: 2;
+}
+.bulut5{
+    top: 200px;
+    left: 80px;
+    animation-duration: 28s;
+    z-index: 3;
+}
+.bulut6{
+    top: 40px;
+    animation-duration: 32s;
+    z-index: 4;
+}
+
+.samalyot {
+    position: absolute;
+    width: 300px;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+    animation-iteration-count: 1000000;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-name: plane;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+}
+
+@keyframes plane {
+    0% {
+        bottom: -200px;
+        left: -300;
+    }
+
+    25% {
+        bottom: 300px;
+        left: 200px;
+
+    }
+
+    60% {
+        bottom: 300px;
+        left: 400px;
+    }
+
+    64% {
+        bottom: 300px;
+        transform: rotateZ(15deg);
+        -webkit-transform: rotateZ(15deg);
+        -moz-transform: rotateZ(15deg);
+        -ms-transform: rotateZ(15deg);
+        -o-transform: rotateZ(15deg);
+}
+
+    100% {
+        left: 1600px;
+        bottom: 0px;
+        transform: rotateZ(25deg);
+        -webkit-transform: rotateZ(25deg);
+        -moz-transform: rotateZ(25deg);
+        -ms-transform: rotateZ(25deg);
+        -o-transform: rotateZ(25deg);
+}
+}
+.quyosh{
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    z-index: 1;
+    animation-iteration-count: 1000000;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-name: quyosh;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+}
+@keyframes quyosh{
+    from{
+
+    }
+    to{
+        transform: rotateZ(360deg);
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        -ms-transform: rotateZ(360deg);
+        -o-transform: rotateZ(360deg);
+}
+}
